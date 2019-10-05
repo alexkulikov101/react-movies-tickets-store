@@ -1,0 +1,62 @@
+.form-container {
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+    label {
+        display: none;
+    }
+    input {
+        height: 25px;
+        width: 200px;
+        padding-left: 5px;
+        border: none;
+        border: 1px solid #000;
+    }
+}
+.form-btn {
+    display: block;
+    margin-top: 15px;
+    margin-left: 20px;
+    display: block;
+    margin-top: 15px;
+    margin-left: 20px;
+    border: 1px solid rgb(0, 119, 204);
+    cursor: pointer;
+    line-height: 1.47059;
+    font-weight: 400;
+    letter-spacing: -0.022em;
+    font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background: linear-gradient(rgb(66, 161, 236), rgb(0, 112, 201));
+    border-radius: 4px;
+    color: rgb(255, 255, 255);
+    min-width: 30px;
+    padding: 4px 15px;
+    text-align: center;
+    white-space: nowrap;
+    text-decoration: none;
+    margin: 0 auto;
+    margin-top: 10px;
+    &:hover {
+        opacity: 0.8;
+    }
+}
+.form-text {
+    a {
+        margin-left: 10px;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+.form-title {
+    margin-top: 170px;
+    margin-bottom: 20px;
+}

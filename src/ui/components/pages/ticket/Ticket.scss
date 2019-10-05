@@ -1,0 +1,232 @@
+.ticket {
+    &__wrap {
+        width: 100%;
+    }
+    &__block-center {
+        width: 500px;
+        margin: 0 auto;
+    }
+    &__filter-list {
+        width: 500px;
+        height: 50px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        list-style: none;
+    }
+    &__filter-btn {
+        padding: 0;
+        background: none;
+        border: none;
+        text-decoration: underline;
+        color: blue;
+        cursor: pointer;
+        &:hover {
+            opacity: 0.6;
+        }
+    }
+    &__filter-btn-active {
+        font-weight: 800;
+        text-decoration: none;
+        font-size: 16px;
+    }
+    &__warning {
+        margin: 0 auto;
+        font-size: 23px;
+    }
+    &__list {
+        width: 500px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__item {
+        position: relative;
+        width: 500px;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        border: 2px solid #000;
+        margin-bottom: 50px;
+        padding: 15px;
+    }
+    &__item-left {
+        width: 150px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        margin-left: 20px;
+    }
+    &__item-img {
+        width: 115px;
+        height: 150px;
+    }
+    &__item-right {
+        width: 250px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        span {
+            margin-top: 25px;
+            font-size: 18px;
+            font-weight: 800;
+        }
+    }
+    &__btn {
+        position: absolute;
+        top: 23px;
+        right: 34px;
+        width: 43px;
+        height: 43px;
+        font-size: 13px;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: none;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        &:hover {
+            opacity: 0.6;
+        }
+    }
+    &__btn-icon {
+        font-size: 22px;
+        color: red;
+        margin-bottom: 5px;
+    }
+    &__btn-text {
+        color: red;
+    }
+}
+
+.ticket.home__wrap.show-side {
+    .container {
+        width: auto;
+    }
+}
+
+@media (max-width: 750px) {
+    .ticket.home__wrap.show-side {
+        .ticket__block-center {
+            width: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .ticket__filter-list {
+            width: 370px;
+        }
+        .ticket__list {
+            width: 375px;
+        }
+        .ticket__item {
+            width: 375px;
+            padding: 0;
+        }
+    }
+}
+
+@media (max-width: 580px) {
+    .ticket.home__wrap.show-side {
+        .ticket__item {
+            width: 260px;
+            min-height: 270px;
+            flex-direction: column;
+        }
+        .ticket__item-img {
+            margin-top: 10px;
+        }
+        .ticket__item-right {
+            span {
+                margin-top: 5px;
+            }
+        }
+        .ticket__item-right {
+            align-items: center;
+        }
+        .ticket__filter-list {
+            width: 220px;
+        }
+        .ticket__list {
+            width: auto;
+        }
+    }
+}
+
+@media (max-width: 580px) {
+    .ticket {
+        &__block-center {
+            width: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__list {
+            width: auto;
+        }
+        &__item {
+            width: 365px;
+        }
+        &__item-left {
+            width: 120px;
+            margin: 0;
+        }
+        &__item-img {
+            width: 90px;
+            height: 110px;
+        }
+        &__item-rigth {
+            width: 155px;
+        }
+        &__filter-list {
+            width: 265px;
+        }
+    }
+}
+@media (max-width: 450px) {
+    .ticket.home__wrap.show-side {
+        .sidebar {
+            height: 100vh;
+            flex: 0.0000001 1 100%;
+        }
+
+        .ticket__wrap {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .ticket {
+        &__item {
+            width: 260px;
+            min-height: 270px;
+            flex-direction: column;
+        }
+        &__item-right {
+            width: 200px;
+            align-items: center;
+            span {
+                margin-top: 5px;
+            }
+        }
+        &__btn {
+            top: 9px;
+            right: 3px;
+        }
+    }
+}

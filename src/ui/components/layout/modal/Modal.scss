@@ -1,0 +1,125 @@
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.modal-window {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    min-height: 200px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.modal-header,
+.modal-body,
+.modal-footer {
+    padding: 10px 20px;
+}
+
+.modal-header {
+    min-height: 60px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+.modal-movie-name,
+.modal-movie-date,
+.modal-movie-time {
+    margin-bottom: 10px;
+}
+
+.modal-title {
+    font-weight: bold;
+}
+
+.modal-footer {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-around;
+}
+.modal-btn {
+    width: 170px;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    line-height: 1.47059;
+    font-weight: 400;
+    letter-spacing: -0.022em;
+    font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    background-color: #0070c9;
+    background: -webkit-gradient(linear, left top, left bottom, from(#42a1ec), to(#0070c9));
+    background: -webkit-linear-gradient(#42a1ec, #0070c9);
+    background: linear-gradient(#42a1ec, #0070c9);
+    border-color: #07c;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    min-width: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    text-align: center;
+    white-space: nowrap;
+    text-decoration: none;
+
+    margin: 0 auto;
+    &:hover {
+        background-color: #147bcd;
+        background: -webkit-gradient(linear, left top, left bottom, from(#51a9ee), to(#147bcd));
+        background: -webkit-linear-gradient(#51a9ee, #147bcd);
+        background: linear-gradient(#51a9ee, #147bcd);
+        border-color: #1482d0;
+        text-decoration: none;
+    }
+}
+
+.modal-btn:last-child {
+    margin-left: 10px;
+}
+
+@media (max-width: 580px) {
+    .modal-window {
+        width: 390px;
+    }
+    .modal-btn {
+        width: 106px;
+        font-size: 14px;
+        white-space: normal;
+    }
+}
+@media (max-width: 445px) {
+    .modal-window {
+        width: 260px;
+    }
+    .modal-btn {
+        padding: 0;
+    }
+}

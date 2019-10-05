@@ -1,0 +1,124 @@
+.sidebar {
+    min-height: 100vh;
+    flex: 0.0000001 1 0px;
+    overflow: visible;
+    width: 0;
+
+    transition: flex 0.3s ease;
+
+    &__btn {
+        display: block;
+        margin-top: 15px;
+        margin-left: 20px;
+        display: block;
+        margin-top: 15px;
+        margin-left: 20px;
+        border: 1px solid rgb(0, 119, 204);
+        cursor: pointer;
+        line-height: 1.47059;
+        font-weight: 400;
+        letter-spacing: -0.022em;
+        font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        background: linear-gradient(rgb(66, 161, 236), rgb(0, 112, 201));
+        border-radius: 4px;
+        color: rgb(255, 255, 255);
+        min-width: 30px;
+        padding: 4px 15px;
+        text-align: center;
+        white-space: nowrap;
+        text-decoration: none;
+        &:hover {
+            opacity: 0.8;
+        }
+
+        &--open {
+            position: absolute;
+            z-index: 100;
+            transition: flex 0.3s ease;
+        }
+    }
+    &__btn-icon {
+        display: block;
+        font-size: 20px;
+    }
+    &__btn-text {
+        font-size: 14px;
+    }
+    &__list {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+    &__item {
+        margin-bottom: 10px;
+        &--name {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 50px;
+        }
+        a:link,
+        a:visited {
+            color: #000;
+        }
+        a:hover {
+            opacity: 0.6;
+        }
+    }
+
+    &__link-noactive {
+        font-weight: normal;
+        text-decoration: underline;
+        &:hover {
+            opacity: 0.6 !important;
+        }
+    }
+    &__link-active {
+        font-weight: 800;
+        text-decoration: none;
+        &:hover {
+            opacity: 1 !important;
+        }
+    }
+
+    &__user-name {
+        font-weight: bold;
+        color: #000;
+    }
+}
+
+.show-side .sidebar {
+    flex: 0.0000001 1 250px;
+    background-color: #f2f2f2;
+    border-right: 1px solid #d6d6d6;
+    z-index: 2;
+}
+
+@media (max-width: 600px) {
+    .sidebar {
+        &__btn-text {
+            width: 60px;
+            font-size: 12px;
+        }
+        &__btn-icon {
+            font-size: 11px;
+        }
+        &__btn {
+            width: 70px;
+            height: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            &--open {
+                width: 70px;
+                height: 50px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}

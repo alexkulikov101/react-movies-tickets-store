@@ -1,0 +1,4 @@
+{
+    "mongoURI": "mongodb+srv://alexander:2020327kulinar!@testforform-uqeoj.mongodb.net/test?retryWrites=true&w=majority",
+    "jwtSecret": "secret"
+}

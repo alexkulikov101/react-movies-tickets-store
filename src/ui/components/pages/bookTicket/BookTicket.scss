@@ -1,0 +1,125 @@
+.book-ticket {
+    height: 1084px;
+    &__wrap {
+        width: 100%;
+    }
+    &__section {
+        width: auto;
+        display: flex;
+        justify-content: center;
+    }
+    &__movie-image {
+        margin-top: 50px;
+        width: 450px;
+        height: 325px;
+        display: flex;
+        justify-content: center;
+    }
+    &__film-image-img {
+        height: 325px;
+    }
+    &__info {
+        margin-top: 50px;
+        width: 800px;
+    }
+}
+
+.rating {
+    &__title {
+        text-decoration: underline;
+        margin-bottom: 10px;
+    }
+    &__info {
+        display: flex;
+        margin-bottom: 20px;
+    }
+    &__user-wrap {
+        width: 200px;
+    }
+    &__user-score {
+        padding: 0;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    &__user-stars {
+        width: 200px;
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1480px) {
+    .book-ticket {
+        &__movie-image {
+            width: 300px;
+        }
+        &__info {
+            width: 500px;
+        }
+    }
+}
+
+@media (max-width: 1020px) {
+    .book-ticket {
+        height: 1210px;
+        &__movie-image {
+            width: 220px;
+            margin-right: 30px;
+        }
+        &__info {
+            width: 220px;
+        }
+    }
+}
+
+@media (max-width: 710px) {
+    .book-ticket {
+        height: 1450px;
+        &__section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__movie-image {
+            margin-top: 15px;
+            width: 150px;
+            height: 210px;
+            margin-right: 0;
+        }
+        &__film-image-img {
+            height: 204px;
+        }
+        &__info {
+            width: auto;
+            margin-top: 25px;
+            padding: 0 30px;
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .book-ticket.home__wrap.show-side {
+        height: 0;
+
+        .sidebar {
+            height: 100vh;
+            flex: 0.0000001 1 100%;
+        }
+
+        .book-ticket__wrap {
+            display: none;
+        }
+        .sidebar__list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+        }
+        .sidebar__item--name {
+            flex-direction: row;
+        }
+        .sidebar__user-name {
+            margin-left: 6px;
+        }
+    }
+}
