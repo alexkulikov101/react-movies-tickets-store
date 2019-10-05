@@ -39,8 +39,26 @@ In order see the functionality of the screeningroom, select movies Matrix or The
 ## Screenshots
 
 ![screenshot1](./src/screenshots/Screenshot_11.png)
+&nbsp;
+&nbsp;
+&nbsp;
 ![screenshot2](./src/screenshots/Screenshot_12.png)
+&nbsp;
+&nbsp;
+&nbsp;
 ![screenshot3](./src/screenshots/Screenshot_13.png)
+&nbsp;
+&nbsp;
+&nbsp;
 ![screenshot4](./src/screenshots/Screenshot_14.png)
+&nbsp;
+&nbsp;
+&nbsp;
 ![screenshot5](./src/screenshots/Screenshot_15.png)
+&nbsp;
+&nbsp;
+&nbsp;
 ![screenshot6](./src/screenshots/Screenshot_16.png)
+&nbsp;
+&nbsp;
+&nbsp;
