@@ -21,6 +21,8 @@ Full stack MERN app made in React.js that simulates reservation system in a cine
 ## Setup
 
 ```bash
+git clone https://github.com/kulinar310/react-movies-tickets-store.git
+cd react-movies-tickets-store
 npm install
 npm run dev2
 In order see the functionality of the screeningroom, select movies Matrix or The Godfather
